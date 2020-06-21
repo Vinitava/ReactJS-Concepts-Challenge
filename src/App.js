@@ -13,7 +13,7 @@ function App() {
 
   async function handleAddRepository() {
     const response = await api.post('repositories', {
-      title: `Novo projeto ${Date.now()}`,
+      title: `New repository`,
     });
 
     const repository = response.data;
